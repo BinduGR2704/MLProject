@@ -26,3 +26,5 @@ setup(
 )
 
 # this setup.py helps to us my MLProject as a package
+# used to install/import python libraries and modules
+# -e . in requirements is used trigger the setup file
