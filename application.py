@@ -1,6 +1,3 @@
-# Flask is a lightweight webFramework of python used in data science to create UI/API so that user can 
-# give their data and get prediction or classification from the trained model.
-
 from flask import Flask, request, render_template
 import numpy as np
 import pandas as pd
@@ -43,9 +40,4 @@ def predict_datapoint():
         return render_template('home.html', results=results[0])
     
 if __name__=="__main__":
-    app.run(host="0.0.0.0",debug=True)
-
-# to run - python app.py    [pip install -r requirements.txt]
-# 127.0.0.1:5000
-# 127.0.0.1:5000/predictdata
-# to stop - ctrl + c
+    app.run(host="0.0.0.0")
